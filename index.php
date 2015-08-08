@@ -15,7 +15,7 @@
 
 */
 
-
+$sponsor_placeholder = '<div class="panel panel-warning"><div class="panel-heading"><h3 class="panel-title">Thank You!</h3></div><div class="panel-body"><img src="https://placehold.it/500x500" style="margin-top: 10%; margin-bottom: 3%;" class="center-block img-thumbnail" alt="$SPONSOR"><p>$SPONSORNAME made a very generous contribution to the team on $DATE, in the form of $MONEY.Thanks to them, we were able to purchase some much-needed supplies to improve the Blender.<p class="text-right"><a href="/news/$SPONSOR" class="btn btn-warning" role="button">MORE</a></p></p></div></div>';
 $path = "/var/www/utdbattlebots.com/template/";
 
 require($path . "head.php");
@@ -55,70 +55,59 @@ require($path . "head.php");
                 		<strong><ul>
                         	<li>Build productive and educational relationships between engineering students and industry professionals.</li> 
                         	<li>Enhance the skills of UT Dallas engineering students through practice and application.</li>
-                        	<li>To be excellent to each other. </li>
+                        	<li>Design, construct, and operate the most effective combat robot possible.</li>
                         	</ul></strong>
 			</div>
 			</div>
 	</div>
 		<div class="col-md-3">
-			<div class="panel panel-warning">
-                                        <div class="panel-heading">
-                                                <h3 class="panel-title">Thank You!</h3>
-                                        </div>
-                                        <div class="panel-body">
-						<img src="https://placehold.it/500x500" style="margin-top: 10%; margin-bottom: 3%;" class="center-block img-thumbnail" alt="$SPONSOR">
-                                                <p>$SPONSORNAME made a very generous contribution to the team on $DATE, in the form of $MONEY. 
-						Thanks to them, we were able to purchase some much-needed supplies to improve the Blender. 
-						<p class="text-right"><a href="/news/$SPONSOR" class="btn btn-warning" role="button">MORE</a></p></p>
-                                        </div>
-                       </div>
+			<?php
+				 print $sponsor_placeholder; 
+			?>
 		</div>
 	</div>
 	
 
-	<div class="page-header">
-		<h1>Team News</h1>
-	</div>
 
 	<div class="row">
-		<div class="col-md-4">
-       				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<h3 class="panel-title">Sponsors</h3>
-					</div>
-					<div class="panel-body">
-    						<ul>
-						<li>will be listed here</li>
-						</ul>
-					</div>
-					</div>
-				
-		</div>
-		<div class="col-md-4">
-				<div class="panel panel-success">
-					<div class="panel-heading">
-						<h3 class="panel-title">Skills</h3>
-					</div>
-					<div class="panel-body">
-    						<ul>
-						<li>Winning</li>
-						<li>Pickin' up chicks</b>
-						</ul>
-					</div>
-					</div>
-		</div>
-		<div class="col-md-4">
-				<div class="panel panel-warning">
-					<div class="panel-heading">
-						<h3 class="panel-title">Panel</h3>
-					</div>
-					<div class="panel-body">
-    						<ul>
-						<li>List Item</li>
-						<li><a>Click here</a> for rare pepe's</li>
-						</ul>
+		<div class="col-md-9">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+       			     			<h1>Team News</h1>
+        				</div>
+       					<div class="panel panel-warning">
+						<div class="panel-heading"><h3 class="panel-title">Oooh! Shiny!</h3></div>
+						<div class="panel-body">
+    							<p>Check out our slick new website! Handcrafted, made in America, and built to last, just like a combat robot.</p>
+						</div>
 					</div>
 				</div>
+			</div>
+			<?php 
+
+			$command = escapeshellcmd('/var/www/utdbattlebots.com/run/get_news.py');
+			$output = shell_exec($command);
+			echo $output;
+
+			?>		
+			<div class="row">
+                                <div class="col-md-12">
+                                        <div class="panel panel-warning">
+                                                <div class="panel-heading"><h3 class="panel-title">Sponsors</h3></div>
+                                                <div class="panel-body">
+                                                        <ul>
+                                                        <li>will be listed here</li>
+                                                        </ul>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>	
+		</div>
+		<div class="col-md-3">
+			 <?php 
+                                 print $sponsor_placeholder; 
+                        ?>
 		</div>
 	</div>
     </div> <!-- /container -->

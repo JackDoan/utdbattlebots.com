@@ -18,26 +18,26 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="./assets/js/bootstrap.min.js"></script>
-    <script src="./assets/js/ga.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/ga.js"></script>
     <script>
-$(document).ready(function () {
-    $("input#submit").click(function(){
-        $.ajax({
-            type: "POST",
-            url: "send_email.php", //process to mail
-            data: $('form.contact').serialize(),
-            success: function(msg){
-                $("#thanks").html(msg) //hide button and show thank you
-                $("#submit").hide(); 
-            },
-            error: function(){
-                alert("failure");
-            }
-        });
-    });
-});
-</script>
+	$(document).ready(function () {
+    		$("input#submit").click(function(){
+        		$.ajax({
+		            type: "POST",
+		            url: "/run/send_email.php", //process to mail
+		            data: $('form.contact').serialize(),
+		            success: function(msg){
+		                $("#thanks").html(msg) //hide button and show thank you
+		                $("#submit").hide(); 
+		            },
+		            error: function(){
+		                alert("failure");
+		            }
+		        });
+		 });
+	});
+    </script>
   </head>
 
   <body role="document">
@@ -50,14 +50,13 @@ $(document).ready(function () {
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">UTD BattleBots</a>
+          <a class="navbar-brand" href="/">UTD BattleBots</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li class="active"><a href="#">Home</a></li>
             <li><a href="/team">Team</a></li>
             <li><a href="https://www.youtube.com/c/Utdbattlebots">Videos</a></li>
-            <li><a href="mailto:contact@utdbattlebots.com">Contact</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
