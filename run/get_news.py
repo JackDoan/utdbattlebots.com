@@ -38,7 +38,7 @@ while (i <= (len(actual_data)-1)):
        		print "<div class=\"panel panel-warning\"><div class=\"panel-heading\"><h3 class=\"panel-title\">"
 		print actual_data[i]['c'][0]['v']
 		print "</h3></div><div class=\"panel-body\"><p>"
-		print actual_data[i]['c'][1]['v'] #date
+		#print actual_data[i]['c'][1]['v'] #date
 		print actual_data[i]['c'][2]['v'] #body
 		print "</p></div></div></div></div>"
 		#articles.append({'title':actual_data[i]['c'][0]['v'],'date':actual_data[i]['c'][1]['v'],'body':actual_data[i]['c'][2]['v']})

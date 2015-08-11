@@ -4,14 +4,6 @@
 **********************************************/
 /*
 
-.intro-header {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    text-align: center;
-    color: #f8f8f8;
-    background: url(../img/intro-bg.jpg) no-repeat center center;
-    background-size: cover;
-}
 
 */
 
@@ -61,9 +53,12 @@ require($path . "head.php");
 			</div>
 	</div>
 		<div class="col-md-3">
-			<?php
-				 print $sponsor_placeholder; 
-			?>
+			<div class="panel panel-warning"><div class="panel-heading"><h3 class="panel-title">Thank You!</h3></div><div class="panel-body">
+			<img src="/assets/img/sponsors/nsf.png" style="margin-top: 10%; margin-bottom: 3%;" class="center-block img-thumbnail" alt="$SPONSOR">
+			<p>Special thanks to the National Science Foundation for their recent donation of funds towards new supplies for our team!  
+			This grant was made through the <a href="http://www.utdallas.edu/nsm/step/">Dallas STEM Gateways Collaborative</a>. Thank you for your support!</p>
+			</div>
+			</div>	
 		</div>
 	</div>
 	
@@ -76,12 +71,6 @@ require($path . "head.php");
 					<div class="page-header">
        			     			<h1>Team News</h1>
         				</div>
-       					<div class="panel panel-warning">
-						<div class="panel-heading"><h3 class="panel-title">Oooh! Shiny!</h3></div>
-						<div class="panel-body">
-    							<p>Check out our slick new website! Handcrafted, made in America, and built to last, just like a combat robot.</p>
-						</div>
-					</div>
 				</div>
 			</div>
 			<?php 
@@ -91,23 +80,14 @@ require($path . "head.php");
 			echo $output;
 
 			?>		
-			<div class="row">
-                                <div class="col-md-12">
-                                        <div class="panel panel-warning">
-                                                <div class="panel-heading"><h3 class="panel-title">Sponsors</h3></div>
-                                                <div class="panel-body">
-                                                        <ul>
-                                                        <li>will be listed here</li>
-                                                        </ul>
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>	
 		</div>
 		<div class="col-md-3">
-			 <?php 
-                                 print $sponsor_placeholder; 
-                        ?>
+			<div class="panel panel-warning"><div class="panel-heading"><h3 class="panel-title">Thank You!</h3></div><div class="panel-body">
+                        <img src="/assets/img/sponsors/dallaswaterjet.png" style="margin-top: 10%; margin-bottom: 3%;" class="center-block img-thumbnail" alt="$SPONSOR">
+                        <p>Dallas Water Jet generously cut out the top plate of our robot at no cost to the team.  
+			This was a hugely useful donation to us, and directly made our robot tougher and better.  Thank you!</p>
+			</div>
+                        </div>	
 		</div>
 	</div>
     </div> <!-- /container -->

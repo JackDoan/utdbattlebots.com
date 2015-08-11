@@ -43,12 +43,14 @@ $dor = new Person('Dor Gamliel', $placeholderPhoto, $mech, 'class', 'email', 'te
 $micah = new Person('Micah Brouwer', $placeholderPhoto, 'title', '2017', 'email', 'teams', 'bio');
 $aaron = new Person('Aaron Plauch&#232;', '/assets/img/team/aaron.png', 'Beard Engineering', '2018', 'jeremiah@utdbattlebots.com', 'leadership, mechanical', $aaron_bio);
 
+$david = new Person('David Merz', $placeholderPhoto, 'Sheep Engineering', '2018', 'david@utdbattlebots.com', 'teams', 'David has a swiss army knife with a hammer. He calls it his pocket hammer. That\'s all you really need to know.');
+
 $jeremiah = new Person('Jeremiah Plauch&#232;', $placeholderPhoto, $mech, '2018', 'jeremiah@utdbattlebots.com', 'leadership, mechanical', '"I don\'t know! Things?"');
 $haley = new Person('Haley Abitz', $placeholderPhoto, $mech, '2018', 'haley@utdbattlebots.com', 'leadership, mechanical', 'insert short joke here lolololololol');
 $jack = new Person('Jack Doan', $placeholderPhoto, 'Computer Engineering', 2018, 'jack@utdbattlebots.com', 'leadership, electrical', 'Often seen frantically poking things with a multimeter.');
 $goeckner = new Person('Dr. Matthew Goeckner', '/assets/img/team/goeckner.jpg', 'Mentor', 'n/a', 'goeckner@utdallas.edu', '', 'Chief Safety Officer and plasma physics consultant'); 
 
-$team = array($jack, $haley, $jeremiah, $noosh_noosh, $alejandro, $aaron, $brian, $micah, $dor, $stuart, $alex, $goeckner); // $jeremiah, $haley, 
+$team = array($jack, $haley, $jeremiah, $noosh_noosh, $alejandro, $aaron, $brian, $micah, $david, $dor, $stuart, $alex, $goeckner); // $jeremiah, $haley, 
 $numberOfPeople = count($team);
 $path = "/var/www/utdbattlebots.com/template/";
 

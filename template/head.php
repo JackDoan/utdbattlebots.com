@@ -54,17 +54,17 @@
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
+            <li class=""><a href="/">Home</a></li>
             <li><a href="/team">Team</a></li>
             <li><a href="https://www.youtube.com/c/Utdbattlebots">Videos</a></li>
-            <li class="dropdown">
+            <!--li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projects <b class="caret"></b></a>
               <ul class="dropdown-menu">
-                <!--li class="divider"></li -->
+                <li class="divider"></li>
                 <li class="dropdown-header">Stuff</li>
                 <li><a href="/">Things</a></li>
               </ul>
-            </li>
+            </li-->
           </ul>
         </div><!--/.nav-collapse -->
       </div>
