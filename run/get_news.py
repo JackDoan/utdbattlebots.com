@@ -14,7 +14,7 @@ import urllib2
 
 data = urllib2.urlopen(api_url).read()
 #we need to strip google.visualization.Query.setResponse( from data, as well as 2 char's on the end
-data_json = data[39:-2]
+data_json = data[47:-2]
 
 import json
 
